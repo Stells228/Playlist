@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Playlist</string>
+    <string name="playlist">Playlist</string>
+    <string name="PlayList">Плейлист</string>
+    <string name="MusicCar">Музыкальный фургончик</string>
+    <string name="add">+ Добавить</string>
+    <string name="filter">Фильтр</string>
+    <string name="sort">Сортировка:</string>
+    <string name="cancel">✕ сбросить</string>
+    <string name="notAtAll">Ничего не нашлось</string>
+    <string name="new_track">Новый трек</string>
+    <string name="NEW_TRACK">New track</string>
+    <string name="author">Исполнитель</string>
+    <string name="example">например, pyrokinesis</string>
+    <string name="name">Название</string>
+    <string name="example_track">например, Ума Турман</string>
+    <string name="year">Год</string>
+    <string name="gggg">гггг</string>
+    <string name="timelong">Длительность (мм:сс)</string>
+    <string name="mmss">мм:сс</string>
+    <string name="Filter">Filter</string>
+    <string name="looong">◆ Длительность (мм:сс или минуты)</string>
+    <string name="from">от, мм:сс</string>
+    <string name="tire">—</string>
+    <string name="to">до, мм:сс</string>
+    <string name="yyear">◆ Год</string>
+    <string name="fromy">от, гггг</string>
+    <string name="titr">—</string>
+    <string name="toy">до, гггг</string>
+    <string name="searchA">◆ Исполнитель или название содержит</string>
+    <string name="searchn">часть имени или названия</string>
+    <string name="canOnly">Можно заполнить только часть полей — пустые не учитываются.</string>
+    <string name="zo">01</string>
+    <string name="dot">·</string>
+</resources>

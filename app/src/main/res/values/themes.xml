@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Playlist" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/pink</item>
+        <item name="colorAccent">@color/red</item>
+        <item name="colorControlActivated">@color/red</item>
+        <item name="android:colorBackground">@color/cream</item>
+        <item name="android:windowBackground">@color/cream</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Playlist" parent="Base.Theme.Playlist" />
+
+    <!-- Общие стили для полей в диалогах -->
+    <style name="FieldLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Field">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:backgroundTint">@color/red</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="OutlineRedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/red</item>
+        <item name="strokeColor">@color/red</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

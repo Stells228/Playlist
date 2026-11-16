@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Плавный переход низа картинки в фон диалога, чтобы не было видно край -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:endColor="#E6FDF6EA"
+        android:startColor="#00FDF6EA" />
+</shape>

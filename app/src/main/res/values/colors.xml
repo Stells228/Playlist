@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cream">#FDF6EA</color>      <!-- фон -->
+    <color name="red">#E0312B</color>        <!-- главный акцент -->
+    <color name="ink">#222222</color>        <!-- основной текст -->
+    <color name="gray">#8A8178</color>       <!-- второстепенный текст -->
+    <color name="hint">#B3A99D</color>       <!-- подсказки в полях -->
+    <color name="line">#D8D2C8</color>       <!-- тонкие линии -->
+    <color name="pink">#C9A3A8</color>       <!-- пыльно-розовый -->
+    <color name="gold">#E3A94B</color>       <!-- звёздочки -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

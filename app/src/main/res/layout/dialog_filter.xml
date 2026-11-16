@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Диалог «Фильтр»: интервалы длительности и года + поиск по тексту -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Шапка диалога: картинка на всю ширину + стеклянная плашка по центру -->
+        <FrameLayout
+            android:id="@+id/dialogHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgArt"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/art_whale" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="125dp"
+                android:background="@drawable/fade_bottom" />
+
+            <com.example.playlist.GlassLayout
+                android:id="@+id/glassTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="149dp"
+                android:layout_marginEnd="18dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/filter"
+                        android:textColor="@color/red"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/Filter"
+                        android:textColor="@color/red"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </com.example.playlist.GlassLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp">
+
+
+            <!-- Длительность от / до -->
+            <TextView style="@style/FieldLabel" android:text="@string/looong" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etDurFrom"
+                    style="@style/Field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/from"
+                    android:inputType="time" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/tire"
+                    android:textColor="@color/gray" />
+
+                <EditText
+                    android:id="@+id/etDurTo"
+                    style="@style/Field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/to"
+                    android:inputType="time" />
+            </LinearLayout>
+
+            <!-- Год от / до -->
+            <TextView style="@style/FieldLabel" android:text="@string/yyear" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etYearFrom"
+                    style="@style/Field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/fromy"
+                    android:inputType="number"
+                    android:maxLength="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/titr"
+                    android:textColor="@color/gray" />
+
+                <EditText
+                    android:id="@+id/etYearTo"
+                    style="@style/Field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/toy"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </LinearLayout>
+
+            <!-- Поиск по тексту -->
+            <TextView style="@style/FieldLabel" android:text="@string/searchA" />
+            <EditText
+                android:id="@+id/etText"
+                style="@style/Field"
+                android:layout_width="match_parent"
+                android:hint="@string/searchn"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/canOnly"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
